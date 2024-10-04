@@ -28,7 +28,7 @@ However, it's advised to use the same version (Python 3.11) that was used for th
 - Following creating secrets in Certificate & secrets in the guide above, take these steps:
 - Click `API permissions` > `Add a permission` > `API my organization uses` > `Microsoft Graph` > `Delegated Permissions`
 - Select all OpenId permissions and click `add permission`.
- ![img.png](img.png)
+- ![img.png](img.png)
 
 4. **Setup the environment variables using a .env file, sample in `.env.sample` **
    ```bash
