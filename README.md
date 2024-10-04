@@ -22,8 +22,15 @@ However, it's advised to use the same version (Python 3.11) that was used for th
 
 2. **You need to create an application on Azure for this app to integrate with this app. Follow this [guide] (https://django-auth-adfs.readthedocs.io/en/latest/azure_ad_config_guide.html)**
 - Stop at Stage 1 (`Choose Multitenant as supported account types`)
-- For a dev environment, use localhost at your preferred port for your redirect url. e.g `http://localhost:3002` 
-3. **Setup the environment variables using a .env file, sample in `.env.sample` **
+- For a dev environment, use localhost at your preferred port for your redirect url. e.g `http://localhost:3002`
+3. 
+4. **Grant necessary permissions to your application**
+- Following creating secrets in Certificate & secrets in the guide above, take these steps:
+- Click `API permissions` > `Add a permission` > `API my organization uses` > `Microsoft Graph` > `Delegated Permissions`
+- Select all OpenId permissions and click `add permission`.
+ ![img.png](img.png)
+
+4. **Setup the environment variables using a .env file, sample in `.env.sample` **
    ```bash
     ENVIRONMENT=development
     DEBUG= # True or False
@@ -31,12 +38,13 @@ However, it's advised to use the same version (Python 3.11) that was used for th
     CLIENT_ID=
     CLIENT_SECRET=
     TENANT_ID=
+   
 - DJANGO_SECRET_KEY: A set of characters for Django `SECRET_KEY` value
 - CLIENT_ID: Your application's client id from Azure
 - TENANT_ID: Your directory id from Azure
 - CLIENT_SECRET: Your directory id from Azure
 
-3. **Run migrations and launch the Django app**
+5. **Run migrations and launch the Django app**
     ```bash
    python manage.py makemigrations
    python manage.py migrate
@@ -44,7 +52,7 @@ However, it's advised to use the same version (Python 3.11) that was used for th
    python manage.py runserver [port]
 - `port` on `python manage.py runserver [port]` must match the port you used on your redirect url on Step 2 above 
 
-4. **Visit http://localhost:[port] (not 127.0.0.1)  and follow the prompt**
+6. **Visit http://localhost:[port] (not 127.0.0.1)  and follow the prompt**
 **It's essential that the app is launched at the port you specified as redirect url on Azure during your App Registration in step @ above.
 
 **Goodluck**
