@@ -1,0 +1,213 @@
+//
+// helper.scss
+//
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.section-two {
+    padding: 60px 0;
+    position: relative;
+}
+
+.bg-overlay {
+    background-color: $overlay;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%
+}
+
+//Heading
+.title-heading {
+    line-height: 26px;
+    position: relative;
+
+    .heading {
+        font-size: 42px !important;
+
+        @media (max-width: 768px) {
+            font-size: 34px !important;
+        }
+    }
+
+    .para-desc {
+        font-size: 18px;
+        max-width: 700px !important;
+    }
+}
+
+
+
+.section-title {
+    position: relative;
+
+    .title {
+        font-size: 28px !important;
+        font-weight: 500;
+    }
+
+    .para-desc {
+        max-width: 700px !important;
+    }
+}
+
+
+//back to top
+.back-to-top {
+    z-index: 99;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    display: none;
+    color: $dark;
+    background-color: $gray-400;
+    transition: all 0.5s ease;
+    box-shadow: $shadow;
+
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }
+}
+
+//Social icon
+.social-icon {
+    li {
+        a {
+
+            color: $muted;
+            border: 1px solid $muted;
+            height: 32px;
+            width: 32px;
+            font-size: 14px !important;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            text-align: center;
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+            overflow: hidden;
+            position: relative;
+            border-radius: 50px;
+
+            &:hover {
+                background-color: $primary;
+                border-color: $primary  !important;
+                color: $white  !important;
+            }
+        }
+    }
+}
+
+//Loader
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(45deg, $white, $white);
+    z-index: 9999999;
+
+    #status {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .spinner {
+            margin: 100px auto;
+            width: 40px;
+            height: 40px;
+            position: relative;
+
+            .cube1,
+            .cube2 {
+                background-color: $primary;
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 50%;
+                animation: sk-cubemove 2s infinite ease-in-out;
+            }
+
+            .cube2 {
+                animation-delay: -0.9s;
+            }
+        }
+    }
+}
+
+@keyframes sk-cubemove {
+    25% {
+        transform: translateX(42px) rotate(-90deg) scale(0.5);
+    }
+
+    50% {
+        transform: translateX(42px) translateY(42px) rotate(-179deg);
+    }
+
+    50.1% {
+        transform: translateX(42px) translateY(42px) rotate(-180deg);
+    }
+
+    75% {
+        transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+//Page triangle
+.page-triangle {
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-top-color: $white;
+        margin-left: -20px;
+    }
+
+    &.triangle-light {
+        &:after {
+            border-top-color: $light;
+        }
+    }
+
+    &.triangle-primary {
+        &:after {
+            border-top-color: $primary;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        padding: 60px 0;
+    }
+}

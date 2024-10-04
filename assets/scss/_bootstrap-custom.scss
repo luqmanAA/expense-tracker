@@ -1,0 +1,101 @@
+//
+// Bootstrap-custom.scss
+//
+
+.container {
+    @media (min-width: 1400px) {
+        max-width: 1140px !important;
+    }
+}
+
+.row>* {
+    position: relative;
+}
+
+@each $name,
+$value in $colors {
+    .bg-#{$name} {
+        background-color: #{$value} !important;
+    }
+
+    .bg-soft-#{$name} {
+        background-color: rgba($value, 0.05) !important;
+    }
+
+    .text-#{$name} {
+        color: #{$value} !important;
+    }
+
+    a {
+        &.text-#{$name} {
+
+            &:hover,
+            &:focus {
+                color: darken($value, 5%) !important;
+            }
+        }
+    }
+}
+.bg-gradient {
+    background: linear-gradient(to bottom, rgba(22,28,45,0.4) 10%, rgba(22,28,45,0.5) 50%, rgba(22,28,45,0.9) 75%, #161c2d 100%) !important;
+}
+
+.shadow {
+    box-shadow: $shadow  !important;
+}
+
+.shadow-md {
+    box-shadow: $shadow-md  !important;
+}
+
+.shadow-lg {
+    box-shadow: $shadow-lg  !important;
+}
+
+//li (list inline item)
+.list-inline-item:not(:last-child) {
+    margin-right: 5px;
+}
+
+
+
+h1,
+h1,
+.fs-1 {
+    font-size: 45px !important;
+}
+
+
+.h2,
+h2,
+.fs-2 {
+    font-size: 38px !important;
+}
+
+
+.h3,
+h3,
+.fs-3 {
+    font-size: 31px !important;
+}
+
+
+.h4,
+h4,
+.fs-4 {
+    font-size: 26px !important;
+}
+
+
+.h5,
+h5,
+.fs-5 {
+    font-size: 20px !important;
+}
+
+.h6,
+h6,
+.fs-6 {
+    font-size: 15px !important;
+}
+

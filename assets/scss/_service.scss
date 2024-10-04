@@ -1,0 +1,54 @@
+//
+// service.scss
+//
+
+.service-two {
+    padding: 0;
+
+    .serv-head {
+        transition: all 0.5s ease;
+    }
+
+    &:hover {
+        .serv-head {
+            color: $primary;
+        }
+    }
+
+    a {
+        transition: all 0.5s ease;
+
+        &:hover {
+            color: $primary  !important;
+        }
+    }
+
+}
+
+.services {
+    border: 2px dashed rgba(204, 200, 200, 0.2);
+    transition: all 0.5s ease;
+
+    &:hover {
+        border: 2px dashed rgba($primary, 0.2);
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+
+    .content a {
+        transition: all 0.5s ease;
+        &:hover {
+            color: $primary  !important;
+        }
+    }
+
+    .icon {
+        i {
+            font-size: 22px;
+            width: 70px;
+            height: 70px;
+            background-color: rgba($primary, 0.05);
+
+        }
+    }
+}

@@ -1,0 +1,126 @@
+//
+// footer.scss
+//
+.footer {
+    padding: 60px 0;
+    position: relative;
+    color: $gray-500;
+
+    .footer-head {
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+
+    .text-foot,
+    .payment li a i {
+        color: $gray-500;
+    }
+
+
+    .footer-list {
+        margin-bottom: 0;
+
+        li {
+            margin-bottom: 10px;
+
+            a {
+                transition: all 0.5s ease;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &.footer-bar {
+        padding: 30px 0;
+    }
+}
+
+.footer-bar {
+    &.border-top {
+        border-top: 1px solid $d-dark !important;
+    }
+}
+
+//footer icon
+.footer-icon {
+    li {
+        a {
+            color: $dark;
+            border: 1px solid $d-dark;
+            background-color: $dark;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 32px;
+            font-size: 14px;
+            width: 32px;
+            transition: all 0.4s ease;
+            overflow: hidden;
+            position: relative;
+            .fea-social {
+                stroke-width: 2;
+            }
+            &:hover {
+                background-color: $primary;
+                border-color: $primary !important;
+                color: $white !important;
+                .fea-social {
+                    fill: $primary;
+                }
+            }
+        }
+    }
+
+    &.social {
+        li {
+            a {
+                color: $gray-500;
+                border-color: $d-dark;
+            }
+        }
+    }
+}
+
+
+// .footer-icon {
+//     li {
+//         a {
+//             color: $light;
+//             border: 1px solid $d-dark;
+//             background-color: $dark;
+//             display: inline-block;
+//             height: 32px;
+//             border-radius: 6px;
+//             text-align: center;
+//             font-size: 15px;
+//             width: 32px;
+//             line-height: 30px;
+//             transition: all 0.4s ease;
+//             overflow: hidden;
+//             position: relative;
+
+//             &:hover {
+//                 background-color: $primary;
+//                 border-color: $primary  !important;
+//                 color: $white  !important;
+//             }
+//         }
+//     }
+
+//     &.social {
+//         li {
+//             a {
+//                 color: $gray-500;
+//                 border-color: $d-dark;
+//             }
+//         }
+//     }
+// }

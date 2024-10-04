@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <!-- COMING SOON PAGE -->
+    {% load static %}
+    <section class="bg-home d-flex align-items-center" style="background-image: url('{% static "images/bg/comingsoon.jpg" %}');">
+        <div class="bg-overlay bg-black" style="opacity: 0.7;"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12 text-center">
+                    <div class="title-heading">
+                        <div class="text-uppercase title-dark text-white mt-2 mb-4 fs-2 fw-bold coming-soon">Welcome
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12 text-center position-relative">
+                    <a href="{% url "django_auth_adfs:login" %}?next={% url "accounts:welcome" %}" class="btn btn-primary mt-4 pt-2"><i class="mdi mdi-login me-2"></i>
+                        Sign In
+                    </a>
+                </div>
+            </div>
+        </div> <!-- end container -->
+    </section>
+
+    <!-- Coming soon -->
+
+{% endblock %}

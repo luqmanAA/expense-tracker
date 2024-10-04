@@ -1,0 +1,43 @@
+//
+// testimonial.scss
+//
+.tiny-slide {
+    .testi-content {
+        cursor: w-resize;
+    }
+    cursor: w-resize;
+
+    .image {
+        img {
+            width: 80px;
+            border: 1px solid $gray-300;
+        }
+    }
+
+    .testi-review {
+        max-width: 700px;
+        position: relative;
+    }
+
+
+    .review-text {
+
+        &.arrow-bottom {
+            &:after {
+                content: " ";
+                position: absolute;
+                top: 100%;
+                left: 8%;
+                border: solid transparent;
+                height: 0;
+                width: 0;
+                border-top-color: $gray-300;
+                border-width: 15px;
+            }
+        }
+    }
+
+}
+
+
+

@@ -1,0 +1,97 @@
+//
+// variables.scss
+//
+
+// Google Fonts: https://fonts.google.com/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+// Color variables
+$white:                     #ffffff;
+
+$primary:                   #764af1;
+$secondary:                 #5a6d90;
+$success:                   #28a745;
+$info:                      #17a2b8;
+$warning:                   #ffc107;
+$danger:                    #dc3545;
+$black:                     #000000;
+$dark:                      #161c2d;
+$muted:                     #707070;
+$light:                     #f8f9fa;
+$d-dark:                    #252e4b;
+// Gray shadow
+$gray-100:                  #f8f9fa;
+$gray-200:                  #e9ecef;
+$gray-300:                  #dee2e6;
+$gray-400:                  #ced4da;
+$gray-500:                  #adb5bd;
+$gray-600:                  #6c757d; 
+$gray-700:                  #495057;
+
+//Color Picker/Switcher
+$blue:                      #2f55d4;
+$yellow:                    #f89d36;
+$dark-pink:                 #fc214f;
+$orange:                    #f34b0a;
+$brown:                     #8e4511;
+$green:                     #b3c212;
+$purple:                    #8e43ad;
+$firozi:                    #2e9fd2;
+
+//Body Background
+$shadow:                    0 0 3px rgba($dark,.15);
+$shadow-md:                 0 5px 13px rgba($dark, .2);
+$shadow-lg:                 0 25px 25px rgba($dark, 0.05);
+$footer:                    lighten($black, 6%);
+
+// Body Background
+$overlay:                   rgba($dark, 0.7);
+$bg-overlay-white:          rgba($white, 0.7);
+$bg-overlay-primary:        rgba($primary, 0.4);  
+$bg-overlay-gradient:       linear-gradient(to bottom, rgba(22,28,45,0.2) 0%, rgba(22,28,45,0.3) 50%, rgba(22,28,45,0.7) 75%, #161c2d 100%);
+// Base font
+$font-size-base:              16px;
+
+$font-family-base:             'DM Sans', sans-serif;
+$font-family-secondary:        'DM Sans', sans-serif;
+
+$colors: (
+    "primary": $primary,
+    "blue": $blue,
+    "secondary": $secondary,
+    "success": $success,
+    "warning": $warning,
+    "info": $info,
+    "danger": $danger,
+    "dark": $dark,
+    "muted": $muted,
+    "light": $light,
+    "yellow": $yellow,
+    "dark-pink": $dark-pink,
+    "orange": $orange,
+    "brown": $brown,
+    "green": $green,
+    "purple": $purple,
+    "firozi": $firozi,
+);
+
+$heading-font-sizes: (
+    "h1, .fs-1": 45px,
+    "h2, .fs-2": 38px,
+    "h3, .fs-3": 31px,
+    "h4, .fs-4": 24px,
+    "h5, .fs-5": 20px,
+    "h6, .fs-6": 15px,
+);
+
+$display-font-sizes: (
+    "display-1": 80px,
+    "display-2": 72px,
+    "display-3": 64px,
+    "display-4": 56px,
+    "display-5": 48px,
+    "display-6": 40px,
+)

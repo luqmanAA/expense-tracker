@@ -1,0 +1,753 @@
+//
+// components.scss
+//
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+//Buttons
+.btn {
+    padding: 7px 18px;
+    border-radius: 7px;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+
+    &:focus {
+        box-shadow: none !important;
+    }
+
+    &.btn-sm {
+        padding: 7px 16px;
+        font-size: 13px;
+    }
+
+    &.btn-lg {
+        padding: 14px 30px;
+        font-size: 16px;
+    }
+
+    &.btn-primary,
+    &.btn-secondary,
+    &.btn-success,
+    &.btn-danger,
+    &.btn-info,
+    &.btn-warning,
+    &.btn-dark {
+        color: $white  !important;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            color: $white  !important;
+        }
+    }
+
+    &.btn-primary-outline,
+    &.btn-secondary-outline,
+    &.btn-success-outline,
+    &.btn-danger-outline,
+    &.btn-info-outline,
+    &.btn-warning-outline,
+    &.btn-dark-outline {
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            color: $white  !important;
+        }
+    }
+
+    &.btn-primary {
+        background: $primary;
+        border: 1px solid $primary;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: darken($primary, 10%) !important;
+        }
+    }
+
+    &.btn-primary-outline {
+        border: 1px solid $primary;
+        color: $primary;
+        background-color: transparent;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+
+    &.btn-secondary {
+        background: $secondary;
+        border: 1px solid $secondary;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: darken($secondary, 10%) !important;
+        }
+    }
+
+    &.btn-secondary-outline {
+        border: 1px solid $secondary;
+        color: $secondary;
+        background-color: transparent;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: $secondary;
+            border-color: $secondary;
+        }
+    }
+
+    &.btn-success {
+        background: $success;
+        border: 1px solid $success;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: darken($success, 10%) !important;
+        }
+    }
+
+    &.btn-success-outline {
+        border: 1px solid $success;
+        color: $success;
+        background-color: transparent;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: $success;
+            border-color: $success;
+        }
+    }
+
+    &.btn-danger {
+        background: $danger;
+        border: 1px solid $danger;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: darken($danger, 10%) !important;
+        }
+    }
+
+    &.btn-danger-outline {
+        border: 1px solid $danger;
+        color: $danger;
+        background-color: transparent;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: $danger;
+            border-color: $danger;
+        }
+    }
+
+    &.btn-info {
+        background: $info;
+        border: 1px solid $info;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: darken($info, 10%) !important;
+        }
+    }
+
+    &.btn-info-outline {
+        border: 1px solid $info;
+        color: $info;
+        background-color: transparent;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: $info;
+            border-color: $info;
+        }
+    }
+
+    &.btn-warning {
+        background: $warning;
+        border: 1px solid $warning;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: darken($warning, 10%) !important;
+        }
+    }
+
+    &.btn-warning-outline {
+        border: 1px solid $warning;
+        color: $warning;
+        background-color: transparent;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: $warning;
+            border-color: $warning;
+        }
+    }
+
+    &.btn-dark {
+        background: $dark;
+        border: 1px solid $dark;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: darken($dark, 10%) !important;
+        }
+    }
+
+    &.btn-dark-outline {
+        border: 1px solid $dark;
+        color: $dark;
+        background-color: transparent;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: $dark;
+            border-color: $dark;
+        }
+    }
+
+    &.btn-light {
+        color: $dark;
+        background: $light;
+        border: 1px solid $gray-300;
+        box-shadow: 0 3px 5px 0 rgba($primary, 0.30);
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: darken($light, 10%) !important;
+            color: $dark;
+        }
+    }
+
+    &.btn-light-outline {
+        border: 1px solid $gray-300;
+        color: $dark;
+        background-color: transparent;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: $light;
+        }
+    }
+
+    &.btn-primary {
+        color: $white;
+        background: $primary;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: $dark;
+            color: $white;
+        }
+    }
+
+    &.btn-primary-white {
+        border: 1px solid $white;
+        color: $white  !important;
+        background-color: transparent;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+
+    &.btn-outline-white {
+        border: 1px solid $white  !important;
+        background-color: transparent;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus {
+            background-color: $primary;
+            color: $white;
+        }
+    }
+}
+
+// Form
+.form-control {
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.icon-sm {
+    height: 16px;
+    width: 16px;
+}
+
+.form-icon .icons {
+    position: absolute;
+    top: 5px;
+    left: 18px;
+    font-size: 18px;
+}
+
+.primary-control-input:checked~.primary-control-label::before {
+    color: $white;
+    border-color: $primary;
+    background-color: $primary;
+    box-shadow: none !important;
+}
+
+//blockquote
+.blockquote {
+    font-style: italic;
+    border-left: 2px solid $gray-500;
+    border-radius: 3px;
+    font-size: 16px !important;
+    padding: 20px 0 20px 30px;
+}
+
+//Pagination
+
+.pagination .page-item .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    color: $dark;
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    border: 1px solid $gray-200;
+    margin: auto 5px;
+    background: $light;
+    transition: all 0.5s ease;
+    font-size: 14px;
+}
+
+.pagination .page-item .page-link.active,
+.pagination .page-item .page-link:hover {
+    background: $primary;
+    color: $white  !important;
+    box-shadow: 0 10px 25px rgba($primary, 0.15);
+}
+
+//Breadcrumb
+.page-next-level {
+    .title {
+        letter-spacing: 1px;
+    }
+
+    .page-next {
+        letter-spacing: 0.5px;
+        padding-left: 0;
+        z-index: 99;
+        font-size: 18px;
+
+        li {
+            display: inline-block;
+            margin-right: 5px;
+
+            &:after {
+                content: "\f0142";
+                color: $dark;
+                font-size: 18px;
+                font-family: 'Material Design Icons';
+            }
+
+            &:last-child {
+                margin-right: 0;
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            a,
+            span {
+                font-size: 18px !important;
+                @media (max-width: 767px) {
+                    font-size: 17px !important;
+                }
+
+                padding-right: 8px;
+                transition: all 0.5s ease;
+            }
+
+            a {
+                &:hover {
+                    color: $primary  !important;
+                }
+            }
+
+            span {
+                &:last-child {
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+
+//Avatar
+.avatar {
+    &.avatar-small {
+        height: 80px;
+    }
+
+    &.avatar-medium {
+        height: 110px;
+    }
+
+    &.avatar-large {
+        height: 140px;
+    }
+}
+
+.avatar-ex-sm {
+    max-height: 25px !important;
+}
+
+.avatar-md-sm {
+    height: 50px;
+    width: 50px;
+}
+
+.avatar.avatar-ex-large {
+    height: 230px;
+    width: 230px;
+}
+
+
+// progressbar
+.progressbox {
+    .progress-value {
+        display: inline-block;
+    }
+
+    .progress {
+        height: 10px;
+
+        .progress-bar {
+            background-color: $primary !important;
+            border-radius: 30px;
+        }
+    }
+}
+
+// .rounded {
+//     border-radius: 6px !important;
+// }
+
+//Nav
+.nav-pills {
+    .nav-link {
+        color: $primary;
+        font-size: 15px;
+        letter-spacing: 1px;
+        border-color: transparent !important;
+    }
+
+    .nav-link.active,
+    .show>.nav-link {
+        background: $primary;
+        font-weight: 600;
+        color: $white  !important;
+    }
+}
+
+// shape
+.shape {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+
+    @media (max-width: 576px) {
+        display: none;
+    }
+}
+
+.shape>svg {
+    transform: scale(2);
+    width: 100%;
+    height: auto;
+    transform-origin: top center;
+}
+
+.home-shape-arrow {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 25px;
+    z-index: 1;
+    left: 0;
+}
+
+.home-shape-arrow .arrow-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: inline-block;
+}
+
+.home-shape-arrow i {
+    background: $light;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 0 0 3px rgba($light, 0.15);
+    border-radius: 30px;
+    transition: all 0.5s ease;
+
+    &:hover {
+        background: $primary;
+        color: $white  !important;
+    }
+}
+
+
+// play-btn
+.btn.btn-icon {
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.avatar.avatar-medium {
+    height: 110px;
+    width: 110px;
+}
+
+.play-icon {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.play-icon i {
+    height: 75px;
+    -webkit-text-stroke: 2px $primary;
+    -webkit-text-fill-color: transparent;
+    width: 75px;
+    font-size: 25px;
+    line-height: 75px;
+    display: inline-block;
+    background-color: $white;
+
+}
+
+.play-btn {
+    height: 78px;
+    width: 78px;
+    font-size: 30px;
+    line-height: 76px;
+    border-radius: 50%;
+    display: inline-block;
+    color: $white;
+    border: 1px solid $white;
+}
+
+.play-icon i:hover {
+    -webkit-text-stroke: 2px $primary;
+    -webkit-text-fill-color: $primary;
+}
+
+//back to home
+.back-to-home a {
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    background: $primary;
+}
+
+.back-to-home {
+    position: fixed;
+    top: 4%;
+    right: 2%;
+    z-index: 1;
+}
+
+// testi-nav
+.tns-nav {
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+
+    button {
+        width: 7px;
+        height: 7px;
+        border-radius: 3px;
+        background: rgba($primary, 0.50) !important;
+        transition: all 0.5s ease;
+        opacity: 1;
+        margin: 4px;
+        border: none;
+
+        &.tns-nav-active {
+            background: $primary  !important;
+            width: 10px;
+        }
+    }
+}
+
+
+//Accordion
+.accordion {
+    .accordion-item {
+        overflow: hidden;
+        border: 0;
+        box-shadow: $shadow;
+
+        .accordion-button {
+            font-weight: 600;
+            text-align: left;
+            box-shadow: none;
+            padding: 1rem 2.5rem 1rem 1.25rem;
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &:before {
+                content: '\F0143';
+                display: block;
+                font-family: 'Material Design Icons';
+                font-size: 16px;
+                color: $primary;
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: all 0.5s ease;
+            }
+
+            &.collapsed {
+                background-color: $white;
+                color: $dark  !important;
+                transition: all 0.5s;
+
+                &:before {
+                    top: 15px;
+                    transform: rotate(180deg);
+                    color: $dark  !important;
+                }
+            }
+
+            &:not(.collapsed) {
+                color: $primary;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+// userpage
+.page-icon{
+    border: 2px dashed $primary;
+}
+
+// border
+.border-top {
+    border-top: 1px solid #e9ecef !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e9ecef !important;
+}
+
+// tobii button
+.tobii__close {
+    font-size: 15px !important;
+}
+
+.tobii__next {
+    font-size: 16px !important;
+}
+
+.tobii__prev {
+    font-size: 16px !important;
+}

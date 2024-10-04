@@ -1,0 +1,117 @@
+//
+// features.scss
+//
+.features {
+    .container-fluid {
+        max-width: 100%;
+
+        .padding-less.img {
+            background: scroll center no-repeat;
+            background-size: cover;
+            position: absolute;
+            height: 100%;
+        }
+    }
+
+    .feature-img-box {
+        padding: 12% 10%;
+    }
+
+    .feature-head {
+        font-size: 24px;
+        font-weight: 500;
+
+        &.title {
+            font-size: 18px;
+        }
+    }
+
+    .core-feature {
+        .icon i {
+            color: $primary;
+            font-size: 16px;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            border: 2px dotted rgba($primary, 0.5) !important;
+        }
+
+        .fea-right {
+            .icon {
+                float: right;
+            }
+        }
+
+        .fea-left {
+            .icon {
+                float: left;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .features {
+        .padding-less {
+            position: relative !important;
+            height: 300px !important;
+        }
+
+        .feature-content {
+            text-align: left !important;
+        }
+
+        .core-feature {
+            .fea-right {
+                text-align: left !important;
+
+                .icon {
+                    float: left;
+                    margin-left: 0 !important;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 200px) and (max-width:767px) {
+    .features {
+        .core-feature-img {
+            display: none;
+        }
+
+        .center-fe,
+        .left-fe {
+            margin-top: 30px;
+        }
+    }
+}
+
+
+// feature-primary
+.feature-primary {
+    .feature-head {
+        transition: all 0.5s ease;
+    }
+
+    &:hover {
+        .feature-head {
+            color: $primary;
+        }
+    }
+}
+
+.features {
+    &.feature-primary {
+        .icons i {
+            border-radius: 50%;
+            border: 2px dotted rgba($primary, 0.5) !important;
+            font-size: 30px;
+            height: 68px;
+            width: 68px;
+            line-height: 65px;
+        }
+    }
+}

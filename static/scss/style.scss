@@ -1,0 +1,49 @@
+/* Template Name: Bizcell - Business Tamplate
+   Author: Shreethemes
+   Version: 1.0.0
+   Created: june 2022
+   File Description: Main Css file of the template
+*/
+/**********************************/
+/*            INDEX               */
+/*==================================
+ *       01.  Variables            *
+ *       02.  Bootstrap Custom     *
+ *       03.  Components           *
+ *       04.  General              *
+ *       05.  Helper               *
+ *       06.  Menu                 *
+ *       07.  Home                 *
+ *       08.  About                *
+ *       09.  Service              *
+ *       10.  Features             *
+ *       11.  Testimonial          *
+ *       12.  Blog                 *
+ *       13.  Team                 *
+ *       14.  Portfolio            *
+ *       15.  Countdown            *
+ *       16.  Work Process         *
+ *       17.  Contact              *
+ *       18.  Footer               *
+ *       19.  Switcher             *
+/***********************************/
+
+@import "variables";
+@import "bootstrap-custom";
+@import "components";
+@import "general";
+@import "helper";
+@import "menu";
+@import "home";
+@import "about";
+@import "service";
+@import "features";
+@import "testimonial";
+@import "blog";
+@import "team";
+@import "portfolio";
+@import "countdown";
+@import "work-process";
+@import "contact";
+@import "footer";
+@import "switcher";

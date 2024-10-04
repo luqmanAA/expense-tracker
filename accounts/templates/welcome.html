@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <!-- Hero Start -->
+    <section class="bg-home bg-light d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="title-heading text-center">
+                        <div class="page-icon d-flex align-items-center text-primary justify-content-center bg-soft-primary rounded-circle mx-auto"
+                            style="height: 100px; width:100px;">
+                            <i class="uil uil-user align-middle h1 mb-0"></i>
+                        </div>
+                        <h2 class="my-4 fw-bold">
+                            Welcome,
+                            {% if name %}
+                                {{ name}}
+                            {% else %}
+                                <i>{no name set}</i>
+                            {% endif %}
+                        </h2>
+                        <h4>{{ email }}</h4>
+                        <a href="{% url 'logout' %}" class="btn btn-primary mt-4 pt-2">Sign Out</a>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- Hero End -->
+
+{% endblock %}

@@ -1,0 +1,27 @@
+//
+// general.scss
+//
+body {
+    font-family: $font-family-secondary;
+    overflow-x: hidden;
+    font-size: $font-size-base !important;
+    color: $dark;
+    font-weight: 400 !important;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $font-family-base;
+    line-height: 1.4;
+    font-weight: 500;
+}
+::selection {
+    background: $muted;
+    color: $white;
+}
+a {
+    text-decoration: none !important;
+}
+p {
+    letter-spacing: 0.01em; 
+    margin-bottom: 0.5rem!important;
+    line-height: 28px;
+}
