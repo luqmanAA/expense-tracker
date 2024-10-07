@@ -19,6 +19,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
+from accounts.views import UserWelcomeView
 from main.views import index_view
 
 urlpatterns = [
@@ -26,5 +27,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('authentication.urls')),
     path('accounts/', include('accounts.urls')),
+    path('test/complete/azuread-tenant-oauth2/', UserWelcomeView.as_view()),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
