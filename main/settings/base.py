@@ -138,7 +138,7 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
 )
 
-# LOGIN_REDIRECT_URL = "accounts:welcome"
+LOGIN_REDIRECT_URL = "/test/complete/azuread-tenant-oauth2/"
 
 CLIENT_ID = config('CLIENT_ID', '')
 
