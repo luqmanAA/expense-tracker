@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     # owned apps
     'accounts',
     'authentication',
+    'expenditures',
+    'organization',
 ]
 
 MIDDLEWARE = [
